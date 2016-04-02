@@ -1,68 +1,91 @@
 ---
+title: HTTP API Specs
 layout: default
 ---
 
-## A Jekyll template for publishing single-page websites and articles that are incredibly readable and fully responsive
+# Introduction
 
-### Nice, clean, reading!
+A collection of RFCs and other specifications useful when designing and implementing HTTP APIs.
 
-Good clean read is set up with readability first in mind. Whatever you want to communicate here can be read easily, and without distraction. Of course, it's fully responsive, which means people can read it naturally on any phone, or tablet. Write it in markdown in <code>index.md</code> and get a beautifully published piece.
+# Specifications
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## The HTTP protocol
 
-> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+### [Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content](https://tools.ietf.org/html/rfc7231)
 
-### With footnotes too!
+From the abstract
+> The Hypertext Transfer Protocol (HTTP) is a stateless application-
+   level protocol for distributed, collaborative, hypertext information
+   systems.  This document **defines the semantics of HTTP/1.1 messages,
+   as expressed by request methods, request header fields, response
+   status codes, and response header fields, along with the payload of
+   messages (metadata and body content) and mechanisms for content
+   negotiation**.
 
-Back up your stuff with solid, clean citations. Footnotes can be written in markdown and appear like this.[^1] Use as many as you like.[^2]
+My primary source of information for the semantics of the HTTP main components, such as request methods, status codes and headers. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-### Add social sharing buttons
 
-Simply add the following line anywhere in your markdown:
+## Links
 
-<pre><code>{% raw  %}
-{% include sharing.html %}
-{% endraw %}
-</code></pre>
+### [Web Linking](https://tools.ietf.org/html/rfc5988)
 
-and get a nice responsive sharing ribbon.
+From the abstract
+> This document specifies **relation types for Web links**, and defines a
+   registry for them.  It also defines the use of such links in HTTP
+   headers with the **Link header field**.
 
-{% include sharing.html %}
+This specification defines:
+* what is a link and what are its constituents
+* a set of standard link relations
+* the `Link` header to add links at the HTTP message level
 
-Add this at the bottom, or the top, or between every other paragraph if you're desprate for social validation.
+### [IANA Link Relation registry](http://www.iana.org/assignments/link-relations/link-relations.xhtml) 
 
-Just remember to customize the buttons to fit your url in the `_includes/sharing.html` file. These buttons are made available and customizable by the good folks at kni-labs. See the documentation at [https://github.com/kni-labs/rrssb](https://github.com/kni-labs/rrssb) for more information.
+The IANA registry with all the standard link relations.
+This is the place to go when selecting or creating link relations.
 
-### Font awesome is also included
+## Security
 
-<i class="fa fa-quote-left fa-3x fa-pull-left fa-border"></i> Now you can use all the cool icons you want! [Font Awesome](http://fontawesome.io) is indeed awesome. But wait, you don't need this sweetness and you don't want that little bit of load time from the font awesome css? No problem, just disable it in the `config.yml` file, and it won't be loaded.
+### [Hypertext Transfer Protocol (HTTP/1.1): Authentication](https://tools.ietf.org/html/rfc7235)
 
-<ul class="fa-ul">
-  <li><i class="fa-li fa fa-check-square"></i>you can make lists...</li>
-  <li><i class="fa-li fa fa-check-square-o"></i>with cool icons like this,</li>
-  <li><i class="fa-li fa fa-spinner fa-spin"></i>even ones that move!</li>
-</ul>
+From the abstract
+> This document defines the HTTP Authentication framework.
 
-If you need them, you can stick any of the [605 icons](http://fontawesome.io/icons/) anywhere, with any size you like. ([See documentation](http://fontawesome.io/examples/))
+My primary source of information for the HTTP authentication and authorization elements, such as the `WWW-Authenticate` and `Authorization` headers as well as the `401` and `403` status codes.
 
-<i class="fa fa-building"></i>&nbsp;&nbsp;<i class="fa fa-bus fa-lg"></i>&nbsp;&nbsp;<i class="fa fa-cube fa-2x"></i>&nbsp;&nbsp;<i class="fa fa-paper-plane fa-3x"></i>&nbsp;&nbsp;<i class="fa fa-camera-retro fa-4x">
+### [The OAuth 2.0 Authorization Framework](https://tools.ietf.org/html/rfc6749)
 
-### Add images to make your point
+From the abstract
+> The OAuth 2.0 authorization framework **enables a third-party
+   application to obtain limited access to an HTTP service, either on
+   behalf of a resource owner by orchestrating an approval interaction
+   between the resource owner and the HTTP service, or by allowing the
+   third-party application to obtain access on its own behalf**
 
-Images play nicely with this template as well. Add diagrams or charts to make your point, and the template will fit them in appropriately.
+*The* OAuth 2.0 framework main specification, describing how a client application obtains access tokens to access a HTTP API, using one of the four standard flows: Authorization Code Grant, Implicit, Resource Owner Password Credentials, and Client Credentials.
 
-<img src="images/hello.svg" alt="sample image">
+### [The OAuth 2.0 Authorization Framework: Bearer Token Usage](https://tools.ietf.org/html/rfc6750)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+From the abstract
+> This specification describes how to use bearer tokens in HTTP
+   requests to access OAuth 2.0 protected resources
 
-Thanks to [Shu Uesengi](https://github.com/chibicode) for inspiring and providing the base for this template with his excellent work, [solo](https://github.com/chibicode).
+A rather short specification defined the proper way to attach a bearer token to a HTTP request message.
 
-<hr>
+### [IANA HTTP Authentication Schemes registry](http://www.iana.org/assignments/http-authschemes/http-authschemes.xhtml)
 
-##### Footnotes:
+The IANA registry all all the standard authentication/authorization schemes, namely: `Basic` and `Bearer`.
 
-[^1]: This is a footnote. Click to return.
+## Syntax
 
-[^2]: Here is another.
+### [Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing](https://tools.ietf.org/html/rfc7230)
+
+From the abstract
+> This document provides an overview of HTTP architecture and
+   its associated terminology, defines the "http" and "https" Uniform
+   Resource Identifier (URI) schemes, **defines the HTTP/1.1 message
+   syntax and parsing requirements**, and describes related security
+   concerns for implementations
+
+Useful for understanding syntax aspects, such as header encodings.
