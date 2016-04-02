@@ -7,7 +7,5 @@ baseurl: "/http-api-specs"
 
 font-awesome-include: true # make this false if you don't need font-awesome
 
-# Build settings
-markdown: kramdown
 
 exclude: ["README.md"]
