@@ -11,7 +11,19 @@ A collection of RFCs and other specifications, useful when designing and impleme
 
 Area     | Spec 
 ---------|----------
-HTTP     | [Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content](#hypertext-transfer-protocol-http11-semantics-and-contenthttpstoolsietforghtmlrfc7231)
+HTTP                    | [Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content](#hypertext-transfer-protocol-http11-semantics-and-contenthttpstoolsietforghtmlrfc7231)
+Links                   | [Web Linking](#web-linkinghttpstoolsietforghtmlrfc5988)
+Links                   | [URI Template](#uri-templatehttpstoolsietforghtmlrfc6570)
+Links                   | [IANA Link Relation registry](#iana-link-relation-registryhttpwwwianaorgassignmentslink-relationslink-relationsxhtml)
+Generic Media Types     | [JSON Hypertext Application Language](#json-hypertext-application-languagehttpstoolsietforghtmldraft-kelly-json-hal-07)
+Generic Media Types     | [Siren](#sirenhttpsgithubcomkevinswibersiren)
+Generic Media Types     | [Collection+JSON](#collectionjsonhttpamundsencommedia-typescollection)
+Security                | [Hypertext Transfer Protocol (HTTP/1.1): Authentication](#hypertext-transfer-protocol-http11-authenticationhttpstoolsietforghtmlrfc7235)
+Security                | [The OAuth 2.0 Authorization Framework](#the-oauth-20-authorization-frameworkhttpstoolsietforghtmlrfc6749)
+Security                | [The OAuth 2.0 Authorization Framework: Bearer Token Usage](#the-oauth-20-authorization-framework-bearer-token-usagehttpstoolsietforghtmlrfc6750)
+Security                | [OpenID Connect Core 1.0](#openid-connect-core-10httpopenidnetspecsopenid-connect-core-10html)
+Security                | [IANA HTTP Authentication Schemes registry](#iana-http-authentication-schemes-registryhttpwwwianaorgassignmentshttp-authschemeshttp-authschemesxhtml)
+
 
 # Specifications
 
