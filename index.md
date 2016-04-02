@@ -14,6 +14,7 @@ A collection of RFCs and other specifications useful when designing and implemen
 ### [Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content](https://tools.ietf.org/html/rfc7231)
 
 From the abstract
+
 > The Hypertext Transfer Protocol (HTTP) is a stateless application-
    level protocol for distributed, collaborative, hypertext information
    systems.  This document **defines the semantics of HTTP/1.1 messages,
@@ -31,6 +32,7 @@ My primary source of information for the semantics of the HTTP main components, 
 ### [Web Linking](https://tools.ietf.org/html/rfc5988)
 
 From the abstract
+
 > This document specifies **relation types for Web links**, and defines a
    registry for them.  It also defines the use of such links in HTTP
    headers with the **Link header field**.
@@ -50,6 +52,7 @@ This is the place to go when selecting or creating link relations.
 ### [Hypertext Transfer Protocol (HTTP/1.1): Authentication](https://tools.ietf.org/html/rfc7235)
 
 From the abstract
+
 > This document defines the HTTP Authentication framework.
 
 My primary source of information for the HTTP authentication and authorization elements, such as the `WWW-Authenticate` and `Authorization` headers as well as the `401` and `403` status codes.
@@ -57,6 +60,7 @@ My primary source of information for the HTTP authentication and authorization e
 ### [The OAuth 2.0 Authorization Framework](https://tools.ietf.org/html/rfc6749)
 
 From the abstract
+
 > The OAuth 2.0 authorization framework **enables a third-party
    application to obtain limited access to an HTTP service, either on
    behalf of a resource owner by orchestrating an approval interaction
@@ -68,6 +72,7 @@ From the abstract
 ### [The OAuth 2.0 Authorization Framework: Bearer Token Usage](https://tools.ietf.org/html/rfc6750)
 
 From the abstract
+
 > This specification describes how to use bearer tokens in HTTP
    requests to access OAuth 2.0 protected resources
 
@@ -82,6 +87,7 @@ The IANA registry all all the standard authentication/authorization schemes, nam
 ### [Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing](https://tools.ietf.org/html/rfc7230)
 
 From the abstract
+
 > This document provides an overview of HTTP architecture and
    its associated terminology, defines the "http" and "https" Uniform
    Resource Identifier (URI) schemes, **defines the HTTP/1.1 message
