@@ -3,7 +3,7 @@ title: HTTP API Specs
 tag_text: HTTP API Specs
 description: HTTP API Specs
 url: "http://127.0.0.1:4000"
-baseurl: "http-api-specs"
+baseurl: "/http-api-specs"
 
 font-awesome-include: true # make this false if you don't need font-awesome
 
