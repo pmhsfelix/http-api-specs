@@ -1,6 +1,6 @@
 ---
 title: HTTP API Specs
-layout: docs-default
+layout: default
 ---
 
 # Introduction
