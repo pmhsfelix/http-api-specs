@@ -5,7 +5,7 @@ layout: default
 
 # Introduction
 
-A collection of RFCs and other specifications useful when designing and implementing HTTP APIs.
+A collection of RFCs and other specifications, useful when designing and implementing HTTP APIs.
 
 # Specifications
 
@@ -38,14 +38,61 @@ From the abstract
    headers with the **Link header field**.
 
 This specification defines:
+
 * what is a link and what are its constituents
 * a set of standard link relations
 * the `Link` header to add links at the HTTP message level
+
+### [URI Template](https://tools.ietf.org/html/rfc6570)
+
+From the abstract
+
+> A URI Template is a compact sequence of characters for describing a
+   range of Uniform Resource Identifiers through variable expansion.
+   *This specification defines the URI Template syntax and the process
+   for expanding a URI Template into a URI reference*, along with
+   guidelines for the use of URI Templates on the Internet.
+
+Defines a standard syntax to represent a URI template, which is a descriptions of a range of Uniform Resource Identifiers through variable expansion.
+Very useful when the server needs to provide the client with a recipe to build URIs instead of a absolute URI.
+An template example is `https://api.github.com/users/{user}`, which produces `https://api.github.com/users/pmhsfelix` when the varible `user` is replaced with the value `pmhsfelix`.
 
 ### [IANA Link Relation registry](http://www.iana.org/assignments/link-relations/link-relations.xhtml) 
 
 The IANA registry with all the standard link relations.
 This is the place to go when selecting or creating link relations.
+
+## Generic media types
+
+### [JSON Hypertext Application Language](https://tools.ietf.org/html/draft-kelly-json-hal-07)
+
+From the abstract
+
+> This document proposes a media type for representing resources and
+   their relations with hyperlinks.
+
+One of the first JSON based media types with hypermedia support.
+Basic support for links and embedded representations.
+Used by the [Amazon API Gateway configuration API](https://docs.aws.amazon.com/apigateway/api-reference/). 
+
+
+### [Siren](https://github.com/kevinswiber/siren)
+
+From the introduction
+
+> Siren is a hypermedia specification for representing entities. As HTML is used for visually representing documents on a Web site, Siren is a specification for presenting entities via a Web API. Siren offers structures to **communicate information about entities, actions for executing state transitions, and links for client navigation**.
+
+Another JSON based media type with hypermedia support.
+Compared with HAL, it introduces the concepts of *actions* (non safe links) and of *classes*.
+Used by the [Zetta IoT platform](http://www.zettajs.org).
+
+### [Collection+JSON](http://amundsen.com/media-types/collection/)
+
+From the description
+
+> Collection+JSON is a JSON-based read/write hypermedia-type designed to support management and querying of simple collections.
+
+A more specialized hypermedia enabled media type, designed specifically to manage collections.
 
 ## Security
 
@@ -67,7 +114,7 @@ From the abstract
    between the resource owner and the HTTP service, or by allowing the
    third-party application to obtain access on its own behalf**
 
-*The* OAuth 2.0 framework main specification, describing how a client application obtains access tokens to access a HTTP API, using one of the four standard flows: Authorization Code Grant, Implicit, Resource Owner Password Credentials, and Client Credentials.
+The OAuth 2.0 framework main specification, describing how a client application obtains access tokens to access a HTTP API, using one of the four standard flows: Authorization Code Grant, Implicit, Resource Owner Password Credentials, and Client Credentials.
 
 ### [The OAuth 2.0 Authorization Framework: Bearer Token Usage](https://tools.ietf.org/html/rfc6750)
 
@@ -76,7 +123,15 @@ From the abstract
 > This specification describes how to use bearer tokens in HTTP
    requests to access OAuth 2.0 protected resources
 
-A rather short specification defined the proper way to attach a bearer token to a HTTP request message.
+A very short specification defining the proper way to attach a bearer token to a HTTP request message.
+
+### [OpenID Connect Core 1.0](http://openid.net/specs/openid-connect-core-1_0.html)
+
+From the abstract
+
+> OpenID Connect 1.0 is a simple identity layer on top of the OAuth 2.0 protocol
+
+OpenID Connect extends the OAuth 2.0 protocol to also handle authentication related tasks.
 
 ### [IANA HTTP Authentication Schemes registry](http://www.iana.org/assignments/http-authschemes/http-authschemes.xhtml)
 
@@ -95,3 +150,14 @@ From the abstract
    concerns for implementations
 
 Useful for understanding syntax aspects, such as header encodings.
+
+### [Uniform Resource Identifier (URI): Generic Syntax](https://tools.ietf.org/html/rfc3986)
+
+From the abstract
+
+> *This specification defines the generic URI syntax* and a process for
+   resolving URI references that might be in relative form, along with
+   guidelines and security considerations for the use of URIs on the
+   Internet.
+
+Useful when handling with URI syntax issues, namely reserved characters and encoding.
