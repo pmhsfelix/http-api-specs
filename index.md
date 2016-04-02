@@ -7,6 +7,12 @@ layout: default
 
 A collection of RFCs and other specifications, useful when designing and implementing HTTP APIs.
 
+# Summary
+
+Area     | Spec 
+---------|----------
+HTTP     | [Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content]([#hypertext-transfer-protocol-http11-semantics-and-content])
+
 # Specifications
 
 ## The HTTP protocol
