@@ -1,6 +1,8 @@
 ---
 title: HTTP API Specs
+layout: docs-default
 ---
+
 # Introduction
 
 A collection of RFCs and other specifications useful when designing and implementing HTTP APIs.
