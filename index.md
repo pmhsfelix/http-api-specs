@@ -23,7 +23,7 @@ Security                | [The OAuth 2.0 Authorization Framework](#the-oauth-20-
 Security                | [The OAuth 2.0 Authorization Framework: Bearer Token Usage](#the-oauth-20-authorization-framework-bearer-token-usagehttpstoolsietforghtmlrfc6750)
 Security                | [OpenID Connect Core 1.0](#openid-connect-core-10httpopenidnetspecsopenid-connect-core-10html)
 Security                | [IANA HTTP Authentication Schemes registry](#iana-http-authentication-schemes-registryhttpwwwianaorgassignmentshttp-authschemeshttp-authschemesxhtml)
-Syntax                  | [Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing</a></h3>](hypertext-transfer-protocol-http11-message-syntax-and-routinghttpstoolsietforghtmlrfc7230)
+Syntax                  | [Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing](hypertext-transfer-protocol-http11-message-syntax-and-routinghttpstoolsietforghtmlrfc7230)
 Syntax                  | [Uniform Resource Identifier (URI): Generic Syntax](uniform-resource-identifier-uri-generic-syntaxhttpstoolsietforghtmlrfc3986)
 
 
