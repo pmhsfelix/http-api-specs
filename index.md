@@ -114,6 +114,35 @@ From the description
 
 A more specialized hypermedia enabled media type, designed specifically to manage collections.
 
+## Media types for specific usages
+
+### [Problem Details for HTTP APIs](https://tools.ietf.org/html/rfc7807)
+
+From the abstract
+
+> This document defines a "problem detail" as a way to carry machine-
+   readable details of errors in a HTTP response to avoid the need to
+   define new error response formats for HTTP APIs.
+
+A media type to use when a status code is not enough to represent all the error information.
+I typically use it to add domain specific information to error HTTP response messages, using the `type` field.
+
+### [Home Documents for HTTP APIs](https://tools.ietf.org/html/draft-nottingham-json-home-03)
+
+From the abstract
+
+> This document proposes a "home document" format for non-browser HTTP clients.
+
+Defines a format for API home documents - the API entry point, containing links to relevant resources.
+An example of such a document is [https://api.github.com](https://api.github.com), which does not use this specification.
+
+Includes the definition of two concepts that may be used in other contexts, other than a home document:
+
+* `href-vars` as a way to provide additional information about URI template variables.
+
+* `hints` that provide advisory information about a resource, prior to any interaction with it. An example is `auth-req` that hits that the resource require authentication.
+
+
 ## Security
 
 ### [Hypertext Transfer Protocol (HTTP/1.1): Authentication](https://tools.ietf.org/html/rfc7235)
