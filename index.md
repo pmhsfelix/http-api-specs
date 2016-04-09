@@ -20,6 +20,7 @@ Generic Media Types              | [Siren](#sirenhttpsgithubcomkevinswibersiren)
 Generic Media Types              | [Collection+JSON](#collectionjsonhttpamundsencommedia-typescollection)
 Other Media Types                | [Problem Details for HTTP APIs](#problem-details-for-http-apishttpstoolsietforghtmlrfc7807)
 Other Media Types                | [Home Documents for HTTP APIs](#home-documents-for-http-apishttpstoolsietforghtmldraft-nottingham-json-home-03)
+Negotiation                      | [Prefer Header for HTTP](prefer-header-for-httphttpstoolsietforghtmlrfc7240)
 Security                         | [Hypertext Transfer Protocol (HTTP/1.1): Authentication](#hypertext-transfer-protocol-http11-authenticationhttpstoolsietforghtmlrfc7235)
 Security                         | [The OAuth 2.0 Authorization Framework](#the-oauth-20-authorization-frameworkhttpstoolsietforghtmlrfc6749)
 Security                         | [The OAuth 2.0 Authorization Framework: Bearer Token Usage](#the-oauth-20-authorization-framework-bearer-token-usagehttpstoolsietforghtmlrfc6750)
@@ -157,7 +158,7 @@ Define a way for the client to influence how a server handles a request, by stat
 * `response-async` - preference for the server to respond immediately with a 202 and perform the remaining work asynchronously.
 * `return=representation | minimal` - preference for a full representation versus a minimal representation for a resource.
 
-IANA manages a [registry](iana preferences registry) for these preferences.
+IANA manages a [registry](http://www.iana.org/assignments/http-parameters/http-parameters.xhtml#preferences) for these preferences.
 
 ## Security
 
