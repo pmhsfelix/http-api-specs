@@ -144,6 +144,20 @@ Includes the definition of two concepts that may be used in other contexts, othe
 
 * `hints` that provide advisory information about a resource, prior to any interaction with it. An example is `auth-req` that hits that the resource require authentication.
 
+## Negotiation
+
+### [Prefer Header for HTTP](https://tools.ietf.org/html/rfc7240)
+
+From the abstract
+
+> This specification defines an HTTP header field that can be used by a client to request that certain behaviors be employed by a server while processing a request.
+
+Define a way for the client to influence how a server handles a request, by stating a set of preferences such as 
+
+* `response-async` - preference for the server to respond immediately with a 202 and perform the remaining work asynchronously.
+* `return=representation | minimal` - preference for a full representation versus a minimal representation for a resource.
+
+IANA manages a [registry](iana preferences registry) for these preferences.
 
 ## Security
 
