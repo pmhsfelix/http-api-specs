@@ -20,6 +20,7 @@ Generic Media Types              | [Siren](#sirenhttpsgithubcomkevinswibersiren)
 Generic Media Types              | [Collection+JSON](#collectionjsonhttpamundsencommedia-typescollection)
 Other Media Types                | [Problem Details for HTTP APIs](#problem-details-for-http-apishttpstoolsietforghtmlrfc7807)
 Other Media Types                | [Home Documents for HTTP APIs](#home-documents-for-http-apishttpstoolsietforghtmldraft-nottingham-json-home-03)
+Semantics                        | [The ‘profile’ Link Relation Type](#the-profile-link-relation-typehttpstoolsietforghtmlrfc6906)
 Negotiation                      | [Prefer Header for HTTP](#prefer-header-for-httphttpstoolsietforghtmlrfc7240)
 Security                         | [Hypertext Transfer Protocol (HTTP/1.1): Authentication](#hypertext-transfer-protocol-http11-authenticationhttpstoolsietforghtmlrfc7235)
 Security                         | [The OAuth 2.0 Authorization Framework](#the-oauth-20-authorization-frameworkhttpstoolsietforghtmlrfc6749)
@@ -154,11 +155,11 @@ From the abstract
 > This specification defines the 'profile' link relation type that
    allows resource representations to indicate that they are following
    one or more profiles.  A profile is defined not to alter the
-   semantics of the resource representation itself, but to *allow clients
+   semantics of the resource representation itself, but to **allow clients
    to learn about additional semantics (constraints, conventions,
    extensions) that are associated with the resource representation, in
    addition to those defined by the media type and possibly other
-   mechanisms.*
+   mechanisms.**
 
 Useful to communicate the representation semantics beyond what is provided by the media type alone. Avoid the creation of specific media type identifiers.
 
