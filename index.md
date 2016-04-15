@@ -145,6 +145,41 @@ Includes the definition of two concepts that may be used in other contexts, othe
 
 * `hints` that provide advisory information about a resource, prior to any interaction with it. An example is `auth-req` that hits that the resource require authentication.
 
+## Semantics
+
+### [The 'profile' Link Relation Type](https://tools.ietf.org/html/rfc6906)
+
+From the abstract
+
+> This specification defines the 'profile' link relation type that
+   allows resource representations to indicate that they are following
+   one or more profiles.  A profile is defined not to alter the
+   semantics of the resource representation itself, but to *allow clients
+   to learn about additional semantics (constraints, conventions,
+   extensions) that are associated with the resource representation, in
+   addition to those defined by the media type and possibly other
+   mechanisms.*
+
+Useful to communicate the representation semantics beyond what is provided by the media type alone. Avoid the creation of specific media type identifiers.
+
+For instance, the following response informs that the HMTL based representation includes elements that should be interpreted according to the [hCard 1.0](http://microformats.org/wiki/hcard) format.
+
+~~~
+HTTP/1.1 200 OK
+Content-Type: text/html
+Link: <http://microformats.org/profile/hcard>; rel="profile"
+
+~~~
+
+The next excerpt includes the `tel`, `type` and `value` HTML classes, which should be interpreted according to the hCard semantics.
+
+~~~
+<span class="tel">
+ <span class="type">home</span>:
+ <span class="value">+1.415.555.1212</span>
+</span>
+~~~
+
 ## Negotiation
 
 ### [Prefer Header for HTTP](https://tools.ietf.org/html/rfc7240)
