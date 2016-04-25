@@ -196,6 +196,25 @@ Define a way for the client to influence how a server handles a request, by stat
 
 IANA manages a [registry](http://www.iana.org/assignments/http-parameters/http-parameters.xhtml#preferences) for these preferences.
 
+## Caching
+
+### [HTTP Cache-Control Extensions for Stale Content](https://tools.ietf.org/html/rfc5861)
+
+From the abstract
+
+> This document defines two independent HTTP Cache-Control extensions
+   that allow control over the use of stale responses by caches.
+
+This RFC defines two new cache control directives that allow the use of stale content by caches:
+
+* `stale-if-error` allows a cache intermediary to return stale content if an error occurs when revalidating this content. 
+By returning stale content instead of an error, it helps to increase perceived availability.
+
+* `stale-while-revalidate` allow a cache intermediary to return stale content immediately, while at the same time triggers an asynchronous revalidation. 
+By returning stale content immediately, instead of waiting for the revalidation result, it helps to reduce perceived latency.
+
+In addition, the `Warning` header can be used to inform the client that stale content is being returned: [https://tools.ietf.org/html/rfc7234#section-5.5.1](https://tools.ietf.org/html/rfc7234#section-5.5.1).
+
 ## Security
 
 ### [Hypertext Transfer Protocol (HTTP/1.1): Authentication](https://tools.ietf.org/html/rfc7235)
