@@ -18,7 +18,7 @@ Links                            | [IANA Link Relation registry](#iana-link-rela
 Generic Media Types              | [JSON Hypertext Application Language](#json-hypertext-application-languagehttpstoolsietforghtmldraft-kelly-json-hal-07)
 Generic Media Types              | [Siren](#sirenhttpsgithubcomkevinswibersiren)
 Generic Media Types              | [Collection+JSON](#collectionjsonhttpamundsencommedia-typescollection)
-Generic Media Types              | [JSONAPI](#jsonapi-httpjsonapiorg)
+Generic Media Types              | [JSON API](#jsonapihttpjsonapiorg)
 Other Media Types                | [Problem Details for HTTP APIs](#problem-details-for-http-apishttpstoolsietforghtmlrfc7807)
 Other Media Types                | [Home Documents for HTTP APIs](#home-documents-for-http-apishttpstoolsietforghtmldraft-nottingham-json-home-03)
 Semantics                        | [The ‘profile’ Link Relation Type](#the-profile-link-relation-typehttpstoolsietforghtmlrfc6906)
@@ -31,7 +31,6 @@ Security                         | [OpenID Connect Core 1.0](#openid-connect-cor
 Security                         | [IANA HTTP Authentication Schemes registry](#iana-http-authentication-schemes-registryhttpwwwianaorgassignmentshttp-authschemeshttp-authschemesxhtml)
 Syntax                           | [Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing](hypertext-transfer-protocol-http11-message-syntax-and-routinghttpstoolsietforghtmlrfc7230)
 Syntax                           | [Uniform Resource Identifier (URI): Generic Syntax](uniform-resource-identifier-uri-generic-syntaxhttpstoolsietforghtmlrfc3986)
-
 
 # Specifications
 
@@ -120,7 +119,7 @@ From the description
 
 A more specialized hypermedia enabled media type, designed specifically to manage collections.
 
-### [JSONAPI](http://jsonapi.org/)
+### [JSON API](http://jsonapi.org/)
 
 From the description
 
