@@ -18,7 +18,7 @@ Links                            | [IANA Link Relation registry](#iana-link-rela
 Generic Media Types              | [JSON Hypertext Application Language](#json-hypertext-application-languagehttpstoolsietforghtmldraft-kelly-json-hal-07)
 Generic Media Types              | [Siren](#sirenhttpsgithubcomkevinswibersiren)
 Generic Media Types              | [Collection+JSON](#collectionjsonhttpamundsencommedia-typescollection)
-Generic Media Types              | [JSON API](jsonapihttpjsonapiorg)
+Generic Media Types              | [JSON API](#jsonapihttpjsonapiorg)
 Other Media Types                | [Problem Details for HTTP APIs](#problem-details-for-http-apishttpstoolsietforghtmlrfc7807)
 Other Media Types                | [Home Documents for HTTP APIs](#home-documents-for-http-apishttpstoolsietforghtmldraft-nottingham-json-home-03)
 Semantics                        | [The ‘profile’ Link Relation Type](#the-profile-link-relation-typehttpstoolsietforghtmlrfc6906)
