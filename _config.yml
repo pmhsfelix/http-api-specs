@@ -12,3 +12,7 @@ font-awesome-include: true # make this false if you don't need font-awesome
 
 
 exclude: ["README.md"]
+
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-slate
